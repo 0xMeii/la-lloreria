@@ -1,0 +1,166 @@
+/* Estilos para todo el documento */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url(/img/background.jpg);
+	background-size: cover;
+	background-position: center;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: #fff;
+}
+
+/* Estilos para el encabezado */
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50px;
+}
+
+h1 {
+	font-size: 3rem;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+p {
+	font-size: 1.2rem;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+/* Estilos para los formularios */
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+label {
+	font-size: 1.2rem;
+	margin-bottom: 10px;
+}
+
+input[type="text"] {
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	border: none;
+	width: 100%;
+	font-size: 1.2rem;
+}
+
+button[type="submit"] {
+	padding: 10px 20px;
+	border-radius: 10px;
+	border: none;
+	background-color: #ed6d6d;
+	color: #fff;
+	font-size: 1.2rem;
+	cursor: pointer;
+}
+
+/* Estilos para las secciones */
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+#reason-section {
+	display: none;
+}
+
+h2 {
+	font-size: 2rem;
+	margin-bottom: 20px;
+}
+
+#reason-paragraph {
+	font-size: 1.2rem;
+	margin-bottom: 20px;
+	word-wrap: break-word;
+	max-width: 80%;
+}
+
+#dance-section img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 10px;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+	margin-bottom: 20px;
+}
+
+#dance-section p {
+	font-size: 1.2rem;
+	margin-bottom: 50px;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+	h1 {
+		font-size: 2rem;
+	}
+
+	p {
+		font-size: 1rem;
+		margin-bottom: 20px;
+	}
+
+	input[type="text"] {
+		font-size: 1rem;
+	}
+
+	button[type="submit"] {
+		font-size: 1rem;
+	}
+
+	h2 {
+		font-size: 1.5rem;
+	}
+
+	#reason-paragraph {
+		font-size: 1rem;
+		margin-bottom: 10px;
+	}
+
+	#dance-section p {
+		font-size: 1rem;
+		margin-bottom: 20px;
+	}
+}
+
+/* Fondo opaco */
+body:before {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: -1;
+}
+
+button#play-button {
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	background-color: #fff;
+	color: #000;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+audio#audio-player {
+	display: none;
+}
